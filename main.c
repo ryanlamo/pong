@@ -1,5 +1,3 @@
-#include <msp430.h> 
-
 /******************************************************
  * Author: C1C Ryan Lamo
  * Created: 14 October 2013
@@ -10,9 +8,9 @@
  * to correctly run the program. Additionally, he showed me how to declare the structures and how
  * to reference them throughout the code.
  ******************************************************/
-#include "pong.h"
+#include <msp430.h> 
 
-//Comment for git assignment
+#include "pong.h"
 
 int main(void) {
     WDTCTL = WDTPW | WDTHOLD;
