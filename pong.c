@@ -1,6 +1,6 @@
 #include "pong.h"
 
-char  WALL_HIT, WALL_NOT_HIT;
+char WALL_HIT, WALL_NOT_HIT;
 
 ball_t ball (int posx, int posy,int velx, int vely, char radius)
 {
@@ -22,8 +22,8 @@ ball_t ballhitleftright(ball_t ball)
 		ball.velocity.x = -ball.velocity.x;
 	}
 	if (ball.position.x - ball.radius<=0){
-			WALL_HIT = 1;
-			ball.velocity.x = -ball.velocity.x;
+        WALL_HIT = 1;
+        ball.velocity.x = -ball.velocity.x;
 	}
 
 	return ball;
@@ -37,8 +37,8 @@ ball_t ballhittopbottom(ball_t ball)
 		ball.velocity.y = - ball.velocity.y;
 	}
 	if (ball.position.y-ball.radius<=0){
-			WALL_HIT = 1;
-			ball.velocity.y = - ball.velocity.y;
+        WALL_HIT = 1;
+        ball.velocity.y = - ball.velocity.y;
 	}
 
 	return ball;

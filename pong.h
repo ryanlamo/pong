@@ -14,19 +14,15 @@
 typedef struct vector{
 	int x;
 	int y;
-}vector2d_t;
+} vector2d_t;
 
 typedef struct ball{
 	vector2d_t position;
 	vector2d_t velocity;
 	char radius;
-}ball_t;
-
+} ball_t;
 
 ball_t ball(int posx, int posy, int velx, int vely, char radius);
 ball_t move_ball (ball_t ball);
 
 #endif
-
-
-
