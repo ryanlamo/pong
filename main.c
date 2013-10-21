@@ -12,6 +12,8 @@
  ******************************************************/
 #include "pong.h"
 
+//Comment for git assignment
+
 int main(void) {
     WDTCTL = WDTPW | WDTHOLD;
 
